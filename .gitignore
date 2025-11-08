@@ -1,0 +1,100 @@
+# ========================================
+# 音频响度过滤器插件 - Git 排除配置
+# ========================================
+
+# ====== 编译输出文件 ======
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.config
+
+# ====== SE4 源代码 ======
+# 排除整个 SubtitleEdit 4.0.13 源代码文件夹
+SE4/
+
+# ====== 测试文件 ======
+# 排除所有测试相关的文件
+test*.bat
+test*.wav
+test_*.wav
+*test*.srt
+
+# ====== 调试和诊断脚本 ======
+debug-*.bat
+diagnose-*.bat
+cleanup-*.bat
+fix-*.bat
+
+# ====== Visual Studio 相关 ======
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+
+# ====== NuGet 包 ======
+*.nupkg
+*.snupkg
+packages/
+project.assets.json
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+*.dgspec.json
+
+# ====== 构建结果 ======
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ====== 临时文件 ======
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ====== ReSharper ======
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ====== Rider ======
+.idea/
+*.sln.iml
+
+# ====== Visual Studio Code ======
+.vscode/
+
+# ====== Windows 系统文件 ======
+*.lnk
+$RECYCLE.BIN/
+
+# ====== FFmpeg 相关 ======
+ffmpeg.exe
+ffprobe.exe
+ffplay.exe
+
+# ====== 其他无用文件 ======
+*.old
+*.orig
+*.bak
+

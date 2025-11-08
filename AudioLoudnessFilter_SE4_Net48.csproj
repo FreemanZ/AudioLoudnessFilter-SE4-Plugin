@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AudioLoudnessFilter</AssemblyName>
+    <RootNamespace>Nikse.SubtitleEdit.PluginLogic</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyTitle>Audio Loudness Filter for SubtitleEdit</AssemblyTitle>
+    <AssemblyDescription>Audio loudness filter plugin for SubtitleEdit using FFmpeg</AssemblyDescription>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="IPlugin_SE4_Official.cs" />
+    <Compile Include="AudioLoudnessFilter_SE4_Net48.cs" />
+    <Compile Include="FFmpegInstaller.cs" />
+  </ItemGroup>
+
+</Project>
