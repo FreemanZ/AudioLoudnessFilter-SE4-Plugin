@@ -20,6 +20,7 @@ test*.bat
 test*.wav
 test_*.wav
 *test*.srt
+GitHub上传指南.md
 
 # ====== 调试和诊断脚本 ======
 debug-*.bat
